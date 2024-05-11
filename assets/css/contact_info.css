@@ -1,0 +1,43 @@
+
+.contact_items{
+    display: block;
+}
+
+.item{
+    display: grid;
+    grid-template-columns: 1fr 20fr;
+}
+
+@media(max-width: 850px){
+    .item{
+        grid-template-columns: 1fr 10fr;
+    }
+}
+
+.item-icons{
+    margin-top: 0px;
+    
+}
+
+
+
+.item-info > h4 {
+    
+    margin-top: 0px;
+    margin-bottom: 10px;
+}
+
+.item-info > p {
+   margin-top: 0px;
+   font-size: small;
+
+}
+.profile{
+    min-height: 800px;
+}
+a{
+    text-decoration: none;
+}
+
+
+
