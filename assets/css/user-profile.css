@@ -66,8 +66,8 @@
     border: none;
     font: 14px Muli, sans-serif;
     border-radius: 20px;
-    padding: 10px 25px;
-    min-width: 100%;
+    padding: 10px 35px;
+    
 }
 
 .contact-info{
@@ -86,6 +86,18 @@
         display: block;
     }
 }
+
+.rate-user{
+    margin-top: 30px;
+    text-align: center;
+
+}
+
+.rate-user > .star{
+    font-size: 30px;
+}
+
+
 .number{
     font-size: small;
     white-space: nowrap;
