@@ -6,7 +6,7 @@ body {
     font-size: 14px;
     font-weight: 300;
     color: #2675E1
-    background-image: linear-gradient(to right, rgba(238, 240, 248, 0.5), rgb(238, 240, 248), rgba(238, 240, 248, 0.5));
+    background-image linear-gradient(to right, rgba(238, 240, 248, 0.5), rgb(238, 240, 248), rgba(238, 240, 248, 0.5));
     font-family: Poppins !important;
     margin: 0px;
 }
@@ -268,6 +268,7 @@ input:focus {
 .input-group>.input-group-prepend:not(:first-child)>.input-group-text {
     border-top-left-radius: 0;
     border-bottom-left-radius: 0;
+    height: 35px;
 }
 
 .chat-search .input-group-text,
