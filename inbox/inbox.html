@@ -1,302 +1,701 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html lang="en">
-<head>
-  <title>Inbox|BOLO</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"/>
-  <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"/>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/line-awesome/1.3.0/line-awesome/css/line-awesome.min.css"/>
-  <link rel="stylesheet" href="../assets/css/inbox.css"/>
-  <style>
-    /* Apply padding-left only for screen width above 992px (Bootstrap lg breakpoint) */
-    @media (min-width: 992px) {
-      body {
-        padding-left: 500px; /* Add left padding to the body */
-      }
-    }
-  </style>
-</head>
-<body>
-  <div class="main-wrapper">
-    <div class="container-fluid">
-      <div class="page-content">
-        <div class="container-fluid p-0">
-          <div class="row no-gutters">
-            <div class="col-md-12">
-              
-                    </div>
-                  </div>
-                <div class="p-3 chat-header">
-                  <div class="d-flex">
-                    <div class="w-100 d-flex pl-0">
-                      <img class="user-detail-trigger rounded-circle shadow avatar-sm mr-3 chat-profile-picture" src="https://user-images.githubusercontent.com/35243461/168796876-2e363a49-b32c-4218-b5a3-ce12493af69e.jpg" />
-                    </div>
-                    <div class="flex-shrink-0 margin-auto">
-                      <a href="#" class="btn btn-sm btn-icon btn-light active text-dark ml-2">
-                        <svg viewBox="0 0 24 24" width="15" height="15" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" class="feather">
-                          <rect x="2" y="7" width="20" height="15" rx="2" ry="2"></rect>
-                          <polyline points="17 2 12 7 7 2"></polyline>
-                        </svg>
-                      </a>
-                      <a href="#" class="btn btn-sm btn-icon btn-light active text-dark ml-2">
-                        <svg viewBox="0 0 24 24" width="15" height="15" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" class="feather">
-                          <path d="M12 20h9"></path>
-                          <path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"></path>
-                        </svg>
-                      </a>
-                      <a href="#" class="btn btn-sm btn-icon btn-light active text-dark ml-2">
-                        <svg viewBox="0 0 24 24" width="15" height="15" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" class="feather">
-                          <circle cx="12" cy="12" r="1"></circle>
-                          <circle cx="12" cy="5" r="1"></circle>
-                          <circle cx="12" cy="19" r="1"></circle>
-                        </svg>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-                <div class="chat-search pl-3 pr-3">
-                  <div class="input-group">
-                    <input type="text" class="form-control" placeholder="Search a conversation">
-                    <div class="input-group-append prepend-white">
-                      <span class="input-group-text pl-2 pr-2">
-                        <i class="fs-17 las la-search drop-shadow"></i>
-                      </span>
-                    </div>
-                  </div>
-                </div>
-                <div class="archived-messages d-flex p-3">
-                  <div class="w-100">
-                    <div class="d-flex pl-0">
-                      <div class="d-flex flex-row mt-1">
-                        <span class="margin-auto mr-2">
-                          <div class="svg15 archived"></div>
-                        </span>
-                        <p class="margin-auto fw-400 text-dark-75">Older Messages</p>
-                      </div>
-                      <div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="chat-user-panel">
-                  <div class="pb-3 d-flex flex-column navigation-mobile pagination-scrool chat-user-scroll">
-                    <div class="chat-item d-flex pl-3 pr-0 pt-3 pb-3">
-                      <a href="message_room.html" style="text-decoration: none;">
-                      <div class="w-100">
-                        <div class="d-flex pl-0">
-                          <img class="rounded-circle shadow avatar-sm mr-3" src="https://user-images.githubusercontent.com/35243461/168796884-ee3aafb6-8083-48ec-9cfb-51b95eae08fe.jpg">
-                          <div>
-                            <p class="margin-auto fw-400 text-dark-75">Nyuydine Bill</p>
-                            <div class="d-flex flex-row mt-1">
-                              <span>
-                                <div class="svg15 double-check"></div>
-                              </span>
-                              <span class="message-shortcut margin-auto text-muted fs-13 ml-1 mr-4">I'm looking forward to it</span>
-                            </div>
-                          </div>
-                        </div>
-                      </a>
-                      </div>
-                      <div class="flex-shrink-0 margin-auto pl-2 pr-3">
-                        <div class="d-flex flex-column">
-                          <p class="text-muted text-right fs-13 mb-2">08:55</p>
-                          <div class="text-right d-flex flex-row">
-                            <span>
-                              <div class="svg18 pinned"></div>
-                            </span>
-                            <i class="text-muted la la-angle-down ml-1 fs-15"></i>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="chat-item active d-flex pl-3 pr-0 pt-3 pb-3">
-                      <div class="w-100">
-                        <div class="d-flex pl-0">
-                          <img class="rounded-circle shadow avatar-sm mr-3" src="https://user-images.githubusercontent.com/35243461/168796877-f6c8819a-5d6e-4b2a-bd56-04963639239b.jpg">
-                          <div>
-                            <p class="margin-auto fw-400 text-dark-75">Eddy-Steve</p>
-                            <div class="d-flex flex-row mt-1">
-                              <span>
-                                <div class="svg15 double-check"></div>
-                              </span>
-                              <span class="message-shortcut margin-auto fw-400 fs-13 ml-1 mr-4">Hey Quan, If you are free now we can meet tonight ?</span>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="flex-shrink-0 margin-auto pl-2 pr-3">
-                        <div class="d-flex flex-column">
-                          <p class="text-muted text-right fs-13 mb-2">08:21</p>
-                          <span class="round badge badge-light-success margin-auto">2</span>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="chat-item d-flex pl-3 pr-0 pt-3 pb-3">
-                      <div class="w-100">
-                        <div class="d-flex pl-0">
-                          <img class="rounded-circle shadow avatar-sm mr-3" src="https://user-images.githubusercontent.com/35243461/168796879-f8c5e585-15c0-49ff-94de-c70539ae434c.jpg">
-                          <div>
-                            <p class="margin-auto fw-400 text-dark-75">Juthel</p>
-                            <div class="d-flex flex-row mt-1">
-                              <span>
-                                <div class="svg15 single-check"></div>
-                              </span>
-                              <span class="message-shortcut margin-auto text-muted fs-13 ml-1 mr-4">No that's everyhing, thanks again! </span>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="flex-shrink-0 margin-auto pl-2 pr-3">
-                        <div class="d-flex flex-column">
-                          <p class="text-muted text-right fs-13 mb-2">04:21</p>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="chat-item d-flex pl-3 pr-0 pt-3 pb-3">
-                      <div class="w-100">
-                        <div class="d-flex pl-0">
-                          <img class="rounded-circle shadow avatar-sm mr-3" src="https://user-images.githubusercontent.com/35243461/168796872-7251e655-cdf0-4031-a253-bf0db09cdf0f.jpg">
-                          <div>
-                            <p class="margin-auto fw-400 text-dark-75">Maite</p>
-                            <div class="d-flex flex-row mt-1">
-                              <span>
-                                <div class="svg15 double-check-blue"></div>
-                              </span>
-                              <span class="message-shortcut margin-auto text-muted fs-13 ml-1 mr-4">So cool, I'll let you know if anything else is needed </span>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="flex-shrink-0 margin-auto pl-2 pr-3">
-                        <div class="d-flex flex-column">
-                          <p class="text-muted text-right fs-13 mb-2">03:47</p>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="chat-item d-flex pl-3 pr-0 pt-3 pb-3">
-                      <div class="w-100">
-                        <div class="d-flex pl-0">
-                          <img class="rounded-circle avatar-sm mr-3" src="https://user-images.githubusercontent.com/35243461/168796904-de09be7a-511c-4ae6-8312-4e81b8721555.svg">
-                          <div>
-                            <p class="margin-auto fw-400 text-dark-75">Hilary</p>
-                            <div class="d-flex flex-row mt-1">
-                              <span>
-                                <div class="svg15 double-check-blue"></div>
-                              </span>
-                              <span class="message-shortcut margin-auto text-muted fs-13 ml-1 mr-4">
-                                <div class="d-flex flex-row text-muted">
-                                  <span>Diego</span>:
-                                  <span class="message-shortcut margin-auto fs-13 ml-1 mr-4">So cool, I'll let you know if anything else is needed </span>
-                                </div>
-                              </span>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="flex-shrink-0 margin-auto pl-2 pr-3">
-                        <div class="d-flex flex-column">
-                          <p class="text-muted text-right fs-13 mb-2">01:15</p>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="chat-item d-flex pl-3 pr-0 pt-3 pb-3">
-                      <div class="w-100">
-                        <div class="d-flex pl-0">
-                          <img class="rounded-circle shadow avatar-sm mr-3" src="https://user-images.githubusercontent.com/35243461/168796882-28875c5c-424a-40d4-8f69-cfb7f18ccd14.jpg">
-                          <div>
-                            <p class="margin-auto fw-400 text-dark-75">Ben</p>
-                            <div class="d-flex flex-row mt-1">
-                              <span>
-                                <div class="svg15 double-check"></div>
-                              </span>
-                              <span class="message-shortcut margin-auto text-muted fs-13 ml-1 mr-4">no problem</span>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="flex-shrink-0 margin-auto pl-2 pr-3">
-                        <div class="d-flex flex-column">
-                          <p class="text-muted text-right fs-13 mb-2">yesterday</p>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="chat-item d-flex pl-3 pr-0 pt-3 pb-3">
-                      <div class="w-100">
-                        <div class="d-flex pl-0">
-                          <img class="rounded-circle avatar-sm mr-3" src="https://user-images.githubusercontent.com/35243461/168796906-ab4fc0f3-551c-4036-b455-be2dfedb9680.svg">
-                          <div>
-                            <p class="margin-auto fw-400 text-dark-75">Joel </p>
-                            <div class="d-flex flex-row mt-1">
-                              <span>
-                                <div class="svg15 double-check"></div>
-                              </span>
-                              <span class="message-shortcut margin-auto text-muted fs-13 ml-1 mr-4">find it hard to believe you don't know</span>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="flex-shrink-0 margin-auto pl-2 pr-3">
-                        <div class="d-flex flex-column">
-                          <p class="text-muted text-right fs-13 mb-2">4.10.2021</p>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="chat-item d-flex pl-3 pr-0 pt-3 pb-3">
-                      <div class="w-100">
-                        <div class="d-flex pl-0">
-                          <img class="rounded-circle shadow avatar-sm mr-3" src="https://user-images.githubusercontent.com/35243461/168796881-383d6cc9-a4cc-402f-b730-e9edc4e1e9b7.jpg">
-                          <div>
-                            <p class="margin-auto fw-400 text-dark-75">James </p>
-                            <div class="d-flex flex-row mt-1">
-                              <span>
-                                <div class="svg15 single-check"></div>
-                              </span>
-                              <span class="message-shortcut margin-auto text-muted fs-13 ml-1 mr-4">All your life</span>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="flex-shrink-0 margin-auto pl-2 pr-3">
-                        <div class="d-flex flex-column">
-                          <p class="text-muted text-right fs-13 mb-2">6.10.2021</p>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="chat-item d-flex pl-3 pr-0 pt-3 pb-3">
-                      <div class="w-100">
-                        <div class="d-flex pl-0">
-                          <img class="rounded-circle avatar-sm mr-3" src="https://user-images.githubusercontent.com/35243461/168796906-ab4fc0f3-551c-4036-b455-be2dfedb9680.svg">
-                          <div>
-                            <p class="margin-auto fw-400 text-dark-75">Cory Bryant</p>
-                            <div class="d-flex flex-row mt-1">
-                              <span>
-                                <div class="svg15 double-check-blue"></div>
-                              </span>
-                              <span class="message-shortcut margin-auto text-muted fs-13 ml-1 mr-4">12-year journey to visit more asteroids than any other</span>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="flex-shrink-0 margin-auto pl-2 pr-3">
-                        <div class="d-flex flex-column">
-                          <p class="text-muted text-right fs-13 mb-2">1.9.2021</p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <title>Recruiter Dashboard</title>
+    <!-- plugins:css -->
+    <link rel="stylesheet" href="../assets/asset//vendors/feather/feather.css" />
+    <link
+      rel="stylesheet"
+      href="../assets/asset//vendors/mdi/css/materialdesignicons.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="../assets/asset//vendors/ti-icons/css/themify-icons.css"
+    />
+    <link
+      rel="stylesheet"
+      href="../assets/asset//vendors/font-awesome/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="../assets/asset//vendors/typicons/typicons.css" />
+    <link
+      rel="stylesheet"
+      href="../assets/asset//vendors/simple-line-icons/css/simple-line-icons.css"
+    />
+    <link rel="stylesheet" href="../assets/asset//vendors/css/vendor.bundle.base.css" />
+    <link
+      rel="stylesheet"
+      href="../assets/asset//vendors/bootstrap-datepicker/bootstrap-datepicker.min.css"
+    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"/>
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/line-awesome/1.3.0/line-awesome/css/line-awesome.min.css"/>
+    <link rel="stylesheet" href="../assets/css/inbox.css"/>
+    <!-- endinject -->
+    <!-- Plugin css for this page -->
+    <link
+      rel="stylesheet"
+      href="../assets/asset//vendors/datatables.net-bs4/dataTables.bootstrap4.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="../assets/asset//js/select.dataTables.min.css"
+    />
+    <!-- End plugin css for this page -->
+    <!-- inject:css -->
+    <link rel="stylesheet" href="../assets/asset//css/recruiter-dashboard.css" />
+    <!-- endinject -->
+    <link rel="shortcut icon" href="../assets/asset//images/logo-zilo.jpg" />
+    
+  </head>
+  <body class="with-welcome-text">
+    <div class="container-scroller">
+      <!-- <div class="row p-0 m-0 proBanner" id="proBanner">
+        <div class="col-md-12 p-0 m-0">
+          <div class="card-body card-body-padding px-3 d-flex align-items-center justify-content-between">
+            <div class="ps-lg-3">
+              <div class="d-flex align-items-center justify-content-between">
+                <p class="mb-0 fw-medium me-3 buy-now-text">Free 24/7 customer support, updates, and more with this template!</p>
+                <a href="https://www.bootstrapdash.com/product/star-admin-pro/" target="_blank" class="btn me-2 buy-now-btn border-0">Buy Now</a>
               </div>
             </div>
+            <div class="d-flex align-items-center justify-content-between">
+              <a href="https://www.bootstrapdash.com/product/star-admin-pro/"><i class="ti-home me-3 text-white"></i></a>
+              <button id="bannerClose" class="btn border-0 p-0">
+                <i class="ti-close text-white"></i>
+              </button>
             </div>
+          </div>
         </div>
+      </div> -->
+      <!-- partial:partials/_navbar.html -->
+      <nav
+        class="navbar default-layout col-lg-12 col-12 p-0 fixed-top d-flex align-items-top flex-row"
+      >
+        <div
+          class="text-center navbar-brand-wrapper d-flex align-items-center justify-content-start"
+        >
+          <div class="me-3">
+            <button
+              class="navbar-toggler navbar-toggler align-self-center"
+              type="button"
+              data-bs-toggle="minimize"
+            >
+              <span class="icon-menu"></span>
+            </button>
+          </div>
+          <li class="nav-item dropdown d-lg-none user-dropdown" style="list-style-type: none;">
+            <a
+              class="nav-link"
+              id="UserDropdown"
+              href="#"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              <img
+                class="img-xs rounded-circle"
+                src="../assets/asset//images/faces/face8.jpg"
+                alt="Profile image"
+              />
+            </a>
+            <div
+              class="dropdown-menu dropdown-menu-right navbar-dropdown"
+              aria-labelledby="UserDropdown"
+            >
+              <div class="dropdown-header text-center">
+                <img
+                  class="img-md rounded-circle"
+                  src="../assets/asset//images/faces/face8.jpg"
+                  alt="Profile image"
+                />
+                <p class="mb-1 mt-3 fw-semibold">Fotso Eddy Steve</p>
+                <p class="fw-light text-muted mb-0">fotsoeddysteve@gmail.com</p>
+              </div>
+              <a class="dropdown-item"
+                ><i
+                  class="dropdown-item-icon mdi mdi-account-outline text-primary me-2"
+                ></i>
+                My Profile
+                <span class="badge badge-pill badge-danger">1</span></a
+              >
+              <a class="dropdown-item"
+                ><i
+                  class="dropdown-item-icon mdi mdi-message-text-outline text-primary me-2"
+                ></i>
+                Messages</a
+              >
+              <a class="dropdown-item"
+                ><i
+                  class="dropdown-item-icon mdi mdi-calendar-check-outline text-primary me-2"
+                ></i>
+                Activity</a
+              >
+              <a class="dropdown-item"
+                ><i
+                  class="dropdown-item-icon mdi mdi-help-circle-outline text-primary me-2"
+                ></i>
+                FAQ</a
+              >
+              <a class="dropdown-item"
+                ><i
+                  class="dropdown-item-icon mdi mdi-power text-primary me-2"
+                ></i
+                >Sign Out</a
+              >
+            </div>
+        </li>
+        
+        </div>
+        <div class="navbar-menu-wrapper d-flex align-items-top">
+          <ul class="navbar-nav">
+            <li class="nav-item fw-semibold d-none d-lg-block ms-0">
+              <h1 class="welcome-text">
+                Welcome Back, <span class="text-black fw-bold">Eddy Steve</span>
+              </h1>
+              
+            </li>
+          </ul>
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item dropdown d-none d-lg-block">
+             
+              <div
+                class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list pb-0"
+                aria-labelledby="messageDropdown"
+              >
+                <a class="dropdown-item py-3">
+                  <p class="mb-0 fw-medium float-start">Select category</p>
+                </a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item preview-item">
+                  <div class="preview-item-content flex-grow py-2">
+                    <p class="preview-subject ellipsis fw-medium text-dark">
+                      Bootstrap Bundle
+                    </p>
+                    <p class="fw-light small-text mb-0">
+                      This is a Bundle featuring 16 unique dashboards
+                    </p>
+                  </div>
+                </a>
+                <a class="dropdown-item preview-item">
+                  <div class="preview-item-content flex-grow py-2">
+                    <p class="preview-subject ellipsis fw-medium text-dark">
+                      Angular Bundle
+                    </p>
+                    <p class="fw-light small-text mb-0">
+                      Everything you’ll ever need for your Angular projects
+                    </p>
+                  </div>
+                </a>
+                <a class="dropdown-item preview-item">
+                  <div class="preview-item-content flex-grow py-2">
+                    <p class="preview-subject ellipsis fw-medium text-dark">
+                      VUE Bundle
+                    </p>
+                    <p class="fw-light small-text mb-0">
+                      Bundle of 6 Premium Vue Admin Dashboard
+                    </p>
+                  </div>
+                </a>
+                <a class="dropdown-item preview-item">
+                  <div class="preview-item-content flex-grow py-2">
+                    <p class="preview-subject ellipsis fw-medium text-dark">
+                      React Bundle
+                    </p>
+                    <p class="fw-light small-text mb-0">
+                      Bundle of 8 Premium React Admin Dashboard
+                    </p>
+                  </div>
+                </a>
+              </div>
+            </li>
+            <li class="nav-item d-none d-lg-block">
+              <div
+                id="datepicker-popup"
+                class="input-group date datepicker navbar-date-picker"
+              >
+                <span
+                  class="input-group-addon input-group-prepend border-right"
+                >
+                  <span
+                    class="icon-calendar input-group-text calendar-icon"
+                  ></span>
+                </span>
+                <input type="text" class="form-control" />
+              </div>
+            </li>
+            <li class="nav-item">
+              <form class="search-form" action="#">
+                <i class="icon-search"></i>
+                <input
+                  type="search"
+                  class="form-control"
+                  placeholder="Search Here"
+                  title="Search here"
+                />
+              </form>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link count-indicator"
+                id="notificationDropdown"
+                href="#"
+                data-bs-toggle="dropdown"
+              >
+                <i class="icon-bell"></i>
+                <span class="count"></span>
+              </a>
+              <div
+                class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list pb-0"
+                aria-labelledby="notificationDropdown"
+              >
+                <a class="dropdown-item py-3 border-bottom">
+                  <p class="mb-0 fw-medium float-start">
+                    You have 4 new notifications
+                  </p>
+                  <span class="badge badge-pill badge-primary float-end"
+                    >View all</span
+                  >
+                </a>
+                <a class="dropdown-item preview-item py-3">
+                  <div class="preview-thumbnail">
+                    <i class="mdi mdi-alert m-auto text-primary"></i>
+                  </div>
+                  <div class="preview-item-content">
+                    <h6 class="preview-subject fw-normal text-dark mb-1">
+                      Application Error
+                    </h6>
+                    <p class="fw-light small-text mb-0">Just now</p>
+                  </div>
+                </a>
+                <a class="dropdown-item preview-item py-3">
+                  <div class="preview-thumbnail">
+                    <i class="mdi mdi-lock-outline m-auto text-primary"></i>
+                  </div>
+                  <div class="preview-item-content">
+                    <h6 class="preview-subject fw-normal text-dark mb-1">
+                      Settings
+                    </h6>
+                    <p class="fw-light small-text mb-0">Private message</p>
+                  </div>
+                </a>
+                <a class="dropdown-item preview-item py-3">
+                  <div class="preview-thumbnail">
+                    <i class="mdi mdi-airballoon m-auto text-primary"></i>
+                  </div>
+                  <div class="preview-item-content">
+                    <h6 class="preview-subject fw-normal text-dark mb-1">
+                      New user registration
+                    </h6>
+                    <p class="fw-light small-text mb-0">2 days ago</p>
+                  </div>
+                </a>
+              </div>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link count-indicator"
+                id="countDropdown"
+                href="#"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <i class="icon-mail icon-lg"></i>
+              </a>
+              <div
+                class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list pb-0"
+                aria-labelledby="countDropdown"
+              >
+                <a class="dropdown-item py-3">
+                  <p class="mb-0 fw-medium float-start">
+                    You have 7 unread mails
+                  </p>
+                  <span class="badge badge-pill badge-primary float-end"
+                    >View all</span
+                  >
+                </a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item preview-item">
+                  <div class="preview-thumbnail">
+                    <img
+                      src="../assets/asset//images/faces/face10.jpg"
+                      alt="image"
+                      class="img-sm profile-pic"
+                    />
+                  </div>
+                  <div class="preview-item-content flex-grow py-2">
+                    <p class="preview-subject ellipsis fw-medium text-dark">
+                      Marian Garner
+                    </p>
+                    <p class="fw-light small-text mb-0">
+                      The meeting is cancelled
+                    </p>
+                  </div>
+                </a>
+                <a class="dropdown-item preview-item">
+                  <div class="preview-thumbnail">
+                    <img
+                      src="../assets/asset//images/faces/face12.jpg"
+                      alt="image"
+                      class="img-sm profile-pic"
+                    />
+                  </div>
+                  <div class="preview-item-content flex-grow py-2">
+                    <p class="preview-subject ellipsis fw-medium text-dark">
+                      David Grey
+                    </p>
+                    <p class="fw-light small-text mb-0">
+                      The meeting is cancelled
+                    </p>
+                  </div>
+                </a>
+                <a class="dropdown-item preview-item">
+                  <div class="preview-thumbnail">
+                    <img
+                      src="../assets/asset//images/faces/face1.jpg"
+                      alt="image"
+                      class="img-sm profile-pic"
+                    />
+                  </div>
+                  <div class="preview-item-content flex-grow py-2">
+                    <p class="preview-subject ellipsis fw-medium text-dark">
+                      Travis Jenkins
+                    </p>
+                    <p class="fw-light small-text mb-0">
+                      The meeting is cancelled
+                    </p>
+                  </div>
+                </a>
+              </div>
+            </li>
+            
+          </ul>
+          <button
+            class="navbar-toggler navbar-toggler-right d-lg-none align-self-center"
+            type="button"
+            data-bs-toggle="offcanvas"
+          >
+            <span class="mdi mdi-menu"></span>
+          </button>
+        </div>
+      </nav>
+      <!-- partial -->
+      <div class="container-fluid page-body-wrapper">
+        <!-- partial:partials/_sidebar.html -->
+        <nav class="sidebar sidebar-offcanvas" id="sidebar">
+          <ul class="nav">
+            <li class="nav-item">
+              <a class="nav-link" href="recruiter-dashboard.html">
+                <i class="mdi mdi-grid-large menu-icon"></i>
+                <span class="menu-title">Dashboard</span>
+              </a>
+            </li>
+            <li class="nav-item nav-category"> <i class=" mdi mdi-clock-outline"></i>Pending Requests</li>
+            <li class="nav-item nav-category">  <i class=" mdi mdi-calendar-check-outline"></i>Recent Events</li>
+            <li class="nav-item nav-category">  <i class=" mdi mdi-calendar"></i>current Events</li>
+            <li class="nav-item nav-category"> <i class=" mdi mdi-trophy"></i>Top Performer</li>
+            <li class="nav-item nav-category" >  <i class=" mdi mdi-cog"></i>settings</li>
+            <li class="nav-item nav-category">  <i class=" mdi mdi-logout" ></i> log-out</li>
+          </ul>
+        </nav>
+        <!-- partial -->
+        <div class="main-panel">
+          <div class="container-fluid">
+            <div class="page-content">
+              <div class="container-fluid p-0">
+                <div class="row no-gutters">
+                  <div class="col-md-12">
+                    
+                          </div>
+                        </div>
+                      
+                      <div class="chat-search pl-3 pr-3">
+                        <div class="input-group">
+                          <input type="text" class="form-control" placeholder="Search a conversation">
+                          <div class="input-group-append prepend-white">
+                            <span class="input-group-text pl-2 pr-2">
+                              <i class="fs-17 las la-search drop-shadow"></i>
+                            </span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="archived-messages d-flex p-3">
+                        <div class="w-100">
+                          <div class="d-flex pl-0">
+                            <div class="d-flex flex-row mt-1">
+                              <span class="margin-auto mr-2">
+                                <div class="svg15 archived"></div>
+                              </span>
+                              <p class="margin-auto fw-400 text-dark-75">Older Messages</p>
+                            </div>
+                            <div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="chat-user-panel">
+                        <div class="pb-3 d-flex flex-column navigation-mobile pagination-scrool chat-user-scroll">
+                          <div class="chat-item d-flex pl-3 pr-0 pt-3 pb-3">
+                            <a href="message_room.html" style="text-decoration: none;">
+                            <div class="w-100">
+                              <div class="d-flex pl-0">
+                                <img class="rounded-circle shadow avatar-sm mr-3" src="https://user-images.githubusercontent.com/35243461/168796884-ee3aafb6-8083-48ec-9cfb-51b95eae08fe.jpg">
+                                <div>
+                                  <p class="margin-auto fw-400 text-dark-75">Nyuydine Bill</p>
+                                  <div class="d-flex flex-row mt-1">
+                                    <span>
+                                      <div class="svg15 double-check"></div>
+                                    </span>
+                                    <span class="message-shortcut margin-auto text-muted fs-13 ml-1 mr-4">I'm looking forward to it</span>
+                                  </div>
+                                </div>
+                              </div>
+                            </a>
+                            </div>
+                            <div class="flex-shrink-0 margin-auto pl-2 pr-3">
+                              <div class="d-flex flex-column">
+                                <p class="text-muted text-right fs-13 mb-2">08:55</p>
+                                <div class="text-right d-flex flex-row">
+                                  <span>
+                                    <div class="svg18 pinned"></div>
+                                  </span>
+                                  <i class="text-muted la la-angle-down ml-1 fs-15"></i>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="chat-item active d-flex pl-3 pr-0 pt-3 pb-3">
+                            <div class="w-100">
+                              <div class="d-flex pl-0">
+                                <img class="rounded-circle shadow avatar-sm mr-3" src="https://user-images.githubusercontent.com/35243461/168796877-f6c8819a-5d6e-4b2a-bd56-04963639239b.jpg">
+                                <div>
+                                  <p class="margin-auto fw-400 text-dark-75">Eddy-Steve</p>
+                                  <div class="d-flex flex-row mt-1">
+                                    <span>
+                                      <div class="svg15 double-check"></div>
+                                    </span>
+                                    <span class="message-shortcut margin-auto fw-400 fs-13 ml-1 mr-4">Hey Quan, If you are free now we can meet tonight ?</span>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="flex-shrink-0 margin-auto pl-2 pr-3">
+                              <div class="d-flex flex-column">
+                                <p class="text-muted text-right fs-13 mb-2">08:21</p>
+                                <span class="round badge badge-light-success margin-auto">2</span>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="chat-item d-flex pl-3 pr-0 pt-3 pb-3">
+                            <div class="w-100">
+                              <div class="d-flex pl-0">
+                                <img class="rounded-circle shadow avatar-sm mr-3" src="https://user-images.githubusercontent.com/35243461/168796879-f8c5e585-15c0-49ff-94de-c70539ae434c.jpg">
+                                <div>
+                                  <p class="margin-auto fw-400 text-dark-75">Juthel</p>
+                                  <div class="d-flex flex-row mt-1">
+                                    <span>
+                                      <div class="svg15 single-check"></div>
+                                    </span>
+                                    <span class="message-shortcut margin-auto text-muted fs-13 ml-1 mr-4">No that's everyhing, thanks again! </span>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="flex-shrink-0 margin-auto pl-2 pr-3">
+                              <div class="d-flex flex-column">
+                                <p class="text-muted text-right fs-13 mb-2">04:21</p>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="chat-item d-flex pl-3 pr-0 pt-3 pb-3">
+                            <div class="w-100">
+                              <div class="d-flex pl-0">
+                                <img class="rounded-circle shadow avatar-sm mr-3" src="https://user-images.githubusercontent.com/35243461/168796872-7251e655-cdf0-4031-a253-bf0db09cdf0f.jpg">
+                                <div>
+                                  <p class="margin-auto fw-400 text-dark-75">Maite</p>
+                                  <div class="d-flex flex-row mt-1">
+                                    <span>
+                                      <div class="svg15 double-check-blue"></div>
+                                    </span>
+                                    <span class="message-shortcut margin-auto text-muted fs-13 ml-1 mr-4">So cool, I'll let you know if anything else is needed </span>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="flex-shrink-0 margin-auto pl-2 pr-3">
+                              <div class="d-flex flex-column">
+                                <p class="text-muted text-right fs-13 mb-2">03:47</p>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="chat-item d-flex pl-3 pr-0 pt-3 pb-3">
+                            <div class="w-100">
+                              <div class="d-flex pl-0">
+                                <img class="rounded-circle avatar-sm mr-3" src="https://user-images.githubusercontent.com/35243461/168796904-de09be7a-511c-4ae6-8312-4e81b8721555.svg">
+                                <div>
+                                  <p class="margin-auto fw-400 text-dark-75">Hilary</p>
+                                  <div class="d-flex flex-row mt-1">
+                                    <span>
+                                      <div class="svg15 double-check-blue"></div>
+                                    </span>
+                                    <span class="message-shortcut margin-auto text-muted fs-13 ml-1 mr-4">
+                                      <div class="d-flex flex-row text-muted">
+                                        <span>Diego</span>:
+                                        <span class="message-shortcut margin-auto fs-13 ml-1 mr-4">So cool, I'll let you know if anything else is needed </span>
+                                      </div>
+                                    </span>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="flex-shrink-0 margin-auto pl-2 pr-3">
+                              <div class="d-flex flex-column">
+                                <p class="text-muted text-right fs-13 mb-2">01:15</p>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="chat-item d-flex pl-3 pr-0 pt-3 pb-3">
+                            <div class="w-100">
+                              <div class="d-flex pl-0">
+                                <img class="rounded-circle shadow avatar-sm mr-3" src="https://user-images.githubusercontent.com/35243461/168796882-28875c5c-424a-40d4-8f69-cfb7f18ccd14.jpg">
+                                <div>
+                                  <p class="margin-auto fw-400 text-dark-75">Ben</p>
+                                  <div class="d-flex flex-row mt-1">
+                                    <span>
+                                      <div class="svg15 double-check"></div>
+                                    </span>
+                                    <span class="message-shortcut margin-auto text-muted fs-13 ml-1 mr-4">no problem</span>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="flex-shrink-0 margin-auto pl-2 pr-3">
+                              <div class="d-flex flex-column">
+                                <p class="text-muted text-right fs-13 mb-2">yesterday</p>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="chat-item d-flex pl-3 pr-0 pt-3 pb-3">
+                            <div class="w-100">
+                              <div class="d-flex pl-0">
+                                <img class="rounded-circle avatar-sm mr-3" src="https://user-images.githubusercontent.com/35243461/168796906-ab4fc0f3-551c-4036-b455-be2dfedb9680.svg">
+                                <div>
+                                  <p class="margin-auto fw-400 text-dark-75">Joel </p>
+                                  <div class="d-flex flex-row mt-1">
+                                    <span>
+                                      <div class="svg15 double-check"></div>
+                                    </span>
+                                    <span class="message-shortcut margin-auto text-muted fs-13 ml-1 mr-4">find it hard to believe you don't know</span>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="flex-shrink-0 margin-auto pl-2 pr-3">
+                              <div class="d-flex flex-column">
+                                <p class="text-muted text-right fs-13 mb-2">4.10.2021</p>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="chat-item d-flex pl-3 pr-0 pt-3 pb-3">
+                            <div class="w-100">
+                              <div class="d-flex pl-0">
+                                <img class="rounded-circle shadow avatar-sm mr-3" src="https://user-images.githubusercontent.com/35243461/168796881-383d6cc9-a4cc-402f-b730-e9edc4e1e9b7.jpg">
+                                <div>
+                                  <p class="margin-auto fw-400 text-dark-75">James </p>
+                                  <div class="d-flex flex-row mt-1">
+                                    <span>
+                                      <div class="svg15 single-check"></div>
+                                    </span>
+                                    <span class="message-shortcut margin-auto text-muted fs-13 ml-1 mr-4">All your life</span>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="flex-shrink-0 margin-auto pl-2 pr-3">
+                              <div class="d-flex flex-column">
+                                <p class="text-muted text-right fs-13 mb-2">6.10.2021</p>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="chat-item d-flex pl-3 pr-0 pt-3 pb-3">
+                            <div class="w-100">
+                              <div class="d-flex pl-0">
+                                <img class="rounded-circle avatar-sm mr-3" src="https://user-images.githubusercontent.com/35243461/168796906-ab4fc0f3-551c-4036-b455-be2dfedb9680.svg">
+                                <div>
+                                  <p class="margin-auto fw-400 text-dark-75">Cory Bryant</p>
+                                  <div class="d-flex flex-row mt-1">
+                                    <span>
+                                      <div class="svg15 double-check-blue"></div>
+                                    </span>
+                                    <span class="message-shortcut margin-auto text-muted fs-13 ml-1 mr-4">12-year journey to visit more asteroids than any other</span>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="flex-shrink-0 margin-auto pl-2 pr-3">
+                              <div class="d-flex flex-column">
+                                <p class="text-muted text-right fs-13 mb-2">1.9.2021</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+          <!-- content-wrapper ends -->
+          <!-- partial:partials/_footer.html -->
+          <!-- <footer class="footer">
+            <div
+              class="d-sm-flex justify-content-center justify-content-sm-between"
+            >
+              <span
+                class="text-muted text-center text-sm-left d-block d-sm-inline-block"
+                >Premium
+                <a href="https://www.bootstrapdash.com/" target="_blank"
+                  >Bootstrap admin template</a
+                >
+                from BootstrapDash.</span
+              >
+              <span
+                class="float-none float-sm-end d-block mt-1 mt-sm-0 text-center"
+                >Copyright © 2023. All rights reserved.</span
+              >
+            </div>
+          </footer> -->
+          <!-- partial -->
+        </div>
+        <!-- main-panel ends -->
       </div>
+      <!-- page-body-wrapper ends -->
     </div>
-  </div>
- <script src="../assets/js/inbox.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.perfect-scrollbar/0.6.7/js/min/perfect-scrollbar.jquery.min.js"></script>
-</body>
+    <!-- container-scroller -->
+    <!-- plugins:js -->
+    <!-- <script src="../assets/asset//js/edd-newMembers.js"></script> -->
+    <script src="../assets/asset//js/create-job.js"></script>
+    <script src="../assets/asset//vendors/js/vendor.bundle.base.js"></script>
+    <script src="../assets/asset//vendors/bootstrap-datepicker/bootstrap-datepicker.min.js"></script>
+    <!-- endinject -->
+    <!-- Plugin js for this page -->
+    <script src="../assets/asset//vendors/chart.js/chart.umd.js"></script>
+    <script src="../assets/asset//vendors/progressbar.js/progressbar.min.js"></script>
+    <!-- End plugin js for this page -->
+    <!-- inject:js -->
+    <script src="../assets/asset//js/off-canvas.js"></script>
+    <script src="../assets/asset//js/template.js"></script>
+    <script src="../assets/asset//js/settings.js"></script>
+    <script src="../assets/asset//js/hoverable-collapse.js"></script>
+    <script src="../assets/asset//js/todolist.js"></script>
+    <!-- endinject -->
+    <!-- Custom js for this page-->
+    <script src="../assets/asset//js/jquery.cookie.js" type="text/javascript"></script>
+    <script src="../assets/asset//js/dashboard.js"></script>
+    <!-- <script src="../assets/asset//js/Chart.roundedBarCharts.js"></script> -->
+    <!-- End custom js for this page-->
+  </body>
 </html>
