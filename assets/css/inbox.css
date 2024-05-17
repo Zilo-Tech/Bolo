@@ -186,7 +186,9 @@ button.btn i {
     border-radius: 8px;
     background: rgb(238, 240, 249);
 }
-
+.correct{
+    height: 35px;
+}
 .form-control input,
 .form-group input,
 input {
