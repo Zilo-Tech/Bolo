@@ -1,0 +1,42 @@
+.container{
+    max-width: 200px;
+    margin: 0 auto;
+}
+.forms{
+    padding: 30px;
+    max-width: 60%;
+    margin-top: 200px;
+    margin: auto;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+}
+@media(max-width: 720px){
+    .forms{
+        min-width: 100% !important;
+        margin: 0 ;    
+    }
+
+    .container{
+        min-width: 100%;
+    }
+}
+
+.update-profile{
+    text-align: center;
+    padding: 2rem;
+  
+   
+}
+.form-label{
+    font-weight: 600;
+}
+
+select{
+    padding: 5px 10px;
+    margin-bottom: 10px;
+}
+
+.btns{
+    margin-left: 50%;
+    border: none;
+}
+
