@@ -1,0 +1,128 @@
+/* FONT */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap");
+
+/* BASE STYLES */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f4f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.progressContainer {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    width: 100%;
+    max-width: 600px;
+    /* Increased width */
+    height: 80vh;
+    /* Increased height */
+    box-sizing: border-box;
+    overflow-y: auto;
+    /* Added scroll for overflow content */
+}
+
+header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+header h1 {
+    font-size: 1.5rem;
+    color: #333;
+    margin: 0;
+}
+
+header p {
+    color: #777;
+    margin-top: 0.5rem;
+}
+
+header .icon {
+    color: #ff4757;
+}
+
+header a {
+    color: #1e90ff;
+    text-decoration: none;
+}
+
+.progress {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.progress__item {
+    position: relative;
+    padding-left: 3rem;
+    /* Increased padding for better spacing */
+    margin-bottom: 2rem;
+    /* Increased margin for better spacing */
+}
+
+.progress__item::before {
+    content: "";
+    position: absolute;
+    left: 1rem;
+    /* Adjusted to align with increased padding */
+    top: 0;
+    bottom: 0;
+    width: 6px;
+    /* Increased line width */
+    background-color: #dfe4ea;
+}
+
+.progress__item::after {
+    content: "";
+    position: absolute;
+    left: 0.5rem;
+    /* Adjusted to align with increased padding */
+    top: 0.75rem;
+    width: 2rem;
+    /* Increased circle size */
+    height: 2rem;
+    /* Increased circle size */
+    border-radius: 50%;
+    background-color: #dfe4ea;
+    z-index: 1;
+}
+
+.progress__item--completed::before,
+.progress__item--active::before {
+    background-color: #1e90ff;
+}
+
+.progress__item--completed::after {
+    background-color: #1e90ff;
+    content: "✔";
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+}
+
+.progress__item--active::after {
+    background-color: #1e90ff;
+}
+
+.progress__title {
+    font-size: 1.25rem;
+    /* Increased font size */
+    margin: 0 0 0.5rem 0;
+    /* Adjusted margin */
+    color: #333;
+}
+
+.progress__info {
+    font-size: 1rem;
+    /* Increased font size */
+    color: #777;
+    margin: 0;
+}
