@@ -227,3 +227,7 @@ a > h4 {
 a {
     text-decoration: none;
 }
+
+.company-img{
+    margin-bottom: 2rem;
+}
