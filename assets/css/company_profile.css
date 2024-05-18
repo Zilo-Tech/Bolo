@@ -202,11 +202,8 @@ li > label {
 
 
 
-.job-details{
-    font-size: x-small;
-    line-height: 1.5;
-    
-    
+.single-job-items{
+    padding-left: 0px;
 }
 .time{
     line-height: 2;
@@ -223,9 +220,10 @@ li > label {
     margin-right: 3px;
 }
 
-.job-title{
-    margin-bottom: 0px;
-    line-height: 0;
-
+a > h4 {
+  margin-top: 10px;
 }
 
+a {
+    text-decoration: none;
+}
