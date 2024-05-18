@@ -13,7 +13,7 @@ function follow() {
         document.getElementById('follow').style.color = "white";
     }
     clicked = clicked + 1;
-    document.getElementById("follow").innerHTML = following;
+    document.getElementById("following").innerHTML = following;
 }
 
 document.getElementById()
