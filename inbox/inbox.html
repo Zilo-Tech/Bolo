@@ -54,28 +54,11 @@
     <!-- endinject -->
     <link rel="shortcut icon" href="../assets/asset//images/logo-zilo.jpg" />
     
+    
   </head>
   <body class="with-welcome-text">
     <div class="container-scroller">
-      <!-- <div class="row p-0 m-0 proBanner" id="proBanner">
-        <div class="col-md-12 p-0 m-0">
-          <div class="card-body card-body-padding px-3 d-flex align-items-center justify-content-between">
-            <div class="ps-lg-3">
-              <div class="d-flex align-items-center justify-content-between">
-                <p class="mb-0 fw-medium me-3 buy-now-text">Free 24/7 customer support, updates, and more with this template!</p>
-                <a href="https://www.bootstrapdash.com/product/star-admin-pro/" target="_blank" class="btn me-2 buy-now-btn border-0">Buy Now</a>
-              </div>
-            </div>
-            <div class="d-flex align-items-center justify-content-between">
-              <a href="https://www.bootstrapdash.com/product/star-admin-pro/"><i class="ti-home me-3 text-white"></i></a>
-              <button id="bannerClose" class="btn border-0 p-0">
-                <i class="ti-close text-white"></i>
-              </button>
-            </div>
-          </div>
-        </div>
-      </div> -->
-      <!-- partial:partials/_navbar.html -->
+      
       <nav
         class="navbar default-layout col-lg-12 col-12 p-0 fixed-top d-flex align-items-top flex-row"
       >
@@ -386,7 +369,7 @@
         </div>
       </nav>
       <!-- partial -->
-      <div class="container-fluid page-body-wrapper">
+      <div class="container-fluid page-body-wrapper hello">
         <!-- partial:partials/_sidebar.html -->
         <nav class="sidebar sidebar-offcanvas" id="sidebar">
           <ul class="nav">
@@ -396,17 +379,17 @@
                 <span class="menu-title">Dashboard</span>
               </a>
             </li>
-            <li class="nav-item nav-category"> <i class=" mdi mdi-clock-outline"></i>Pending Requests</li>
-            <li class="nav-item nav-category">  <i class=" mdi mdi-calendar-check-outline"></i>Recent Events</li>
-            <li class="nav-item nav-category">  <i class=" mdi mdi-calendar"></i>current Events</li>
-            <li class="nav-item nav-category"> <i class=" mdi mdi-trophy"></i>Top Performer</li>
-            <li class="nav-item nav-category" >  <i class=" mdi mdi-cog"></i>settings</li>
-            <li class="nav-item nav-category">  <i class=" mdi mdi-logout" ></i> log-out</li>
+            <a href="../recruiter-dashboard.html"><li class="nav-item nav-category"> <i class=" mdi mdi-clock-outline"></i>View Applications</li></a>
+            <a href="../recruiter/jobs.html"><li class="nav-item nav-category">  <i class=" mdi mdi-calendar-check-outline"></i>My Jobs</li></a>
+            <a href="#"><li class="nav-item nav-category">  <i class=" mdi mdi-calendar"></i>Messages</li></a>
+            <a href="#"><li class="nav-item nav-category"> <i class=" mdi mdi-trophy"></i>Recommendations</li></a>
+            <a href="../profiles/company_profile.html"><li class="nav-item nav-category" >  <i class=" mdi mdi-cog"></i>settings</li></a>
+            <a href="#"><li class="nav-item nav-category">  <i class=" mdi mdi-logout" ></i> log-out</li></a>
           </ul>
         </nav>
         <!-- partial -->
         <div class="main-panel">
-          <div class="container-fluid">
+          <div class="container-fluid" >
             <div class="page-content">
               <div class="container-fluid p-0">
                 <div class="row no-gutters">
@@ -417,7 +400,7 @@
                       
                       <div class="chat-search pl-3 pr-3">
                         <div class="input-group">
-                          <input type="text" class="form-control" placeholder="Search a conversation">
+                          <input type="text" class="form-control " placeholder="Search a conversation" style="height: 35px !important;">
                           <div class="input-group-append prepend-white">
                             <span class="input-group-text pl-2 pr-2">
                               <i class="fs-17 las la-search drop-shadow"></i>
@@ -472,6 +455,7 @@
                           </div>
                           <div class="chat-item active d-flex pl-3 pr-0 pt-3 pb-3">
                             <div class="w-100">
+                              <a href="message_room.html" style="text-decoration: none;">
                               <div class="d-flex pl-0">
                                 <img class="rounded-circle shadow avatar-sm mr-3" src="https://user-images.githubusercontent.com/35243461/168796877-f6c8819a-5d6e-4b2a-bd56-04963639239b.jpg">
                                 <div>
@@ -494,6 +478,7 @@
                           </div>
                           <div class="chat-item d-flex pl-3 pr-0 pt-3 pb-3">
                             <div class="w-100">
+                              <a href="message_room.html" style="text-decoration: none;">
                               <div class="d-flex pl-0">
                                 <img class="rounded-circle shadow avatar-sm mr-3" src="https://user-images.githubusercontent.com/35243461/168796879-f8c5e585-15c0-49ff-94de-c70539ae434c.jpg">
                                 <div>
@@ -515,6 +500,7 @@
                           </div>
                           <div class="chat-item d-flex pl-3 pr-0 pt-3 pb-3">
                             <div class="w-100">
+                              <a href="message_room.html" style="text-decoration: none;">
                               <div class="d-flex pl-0">
                                 <img class="rounded-circle shadow avatar-sm mr-3" src="https://user-images.githubusercontent.com/35243461/168796872-7251e655-cdf0-4031-a253-bf0db09cdf0f.jpg">
                                 <div>
@@ -536,6 +522,7 @@
                           </div>
                           <div class="chat-item d-flex pl-3 pr-0 pt-3 pb-3">
                             <div class="w-100">
+                              <a href="message_room.html" style="text-decoration: none;">
                               <div class="d-flex pl-0">
                                 <img class="rounded-circle avatar-sm mr-3" src="https://user-images.githubusercontent.com/35243461/168796904-de09be7a-511c-4ae6-8312-4e81b8721555.svg">
                                 <div>
@@ -562,6 +549,7 @@
                           </div>
                           <div class="chat-item d-flex pl-3 pr-0 pt-3 pb-3">
                             <div class="w-100">
+                              <a href="message_room.html" style="text-decoration: none;">
                               <div class="d-flex pl-0">
                                 <img class="rounded-circle shadow avatar-sm mr-3" src="https://user-images.githubusercontent.com/35243461/168796882-28875c5c-424a-40d4-8f69-cfb7f18ccd14.jpg">
                                 <div>
@@ -583,6 +571,7 @@
                           </div>
                           <div class="chat-item d-flex pl-3 pr-0 pt-3 pb-3">
                             <div class="w-100">
+                              <a href="message_room.html" style="text-decoration: none;">
                               <div class="d-flex pl-0">
                                 <img class="rounded-circle avatar-sm mr-3" src="https://user-images.githubusercontent.com/35243461/168796906-ab4fc0f3-551c-4036-b455-be2dfedb9680.svg">
                                 <div>
@@ -604,6 +593,7 @@
                           </div>
                           <div class="chat-item d-flex pl-3 pr-0 pt-3 pb-3">
                             <div class="w-100">
+                              <a href="message_room.html" style="text-decoration: none;">
                               <div class="d-flex pl-0">
                                 <img class="rounded-circle shadow avatar-sm mr-3" src="https://user-images.githubusercontent.com/35243461/168796881-383d6cc9-a4cc-402f-b730-e9edc4e1e9b7.jpg">
                                 <div>

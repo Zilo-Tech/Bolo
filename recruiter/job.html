@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -7,36 +8,36 @@
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
-    <title>Recruiter Dashboard</title>
+    <title>Recruiter Dashboard| Jobs</title>
     <!-- plugins:css -->
-    <link rel="stylesheet" href="./assets/asset/vendors/feather/feather.css" />
+    <link rel="stylesheet" href="../assets/asset/vendors/feather/feather.css" />
     <link
       rel="stylesheet"
-      href="./assets/asset/vendors/mdi/css/materialdesignicons.min.css"
+      href="../assets/asset/vendors/mdi/css/materialdesignicons.min.css"
     />
     <link
       rel="stylesheet"
-      href="./assets/asset/vendors/ti-icons/css/themify-icons.css"
+      href="../assets/asset/vendors/ti-icons/css/themify-icons.css"
     />
     <link
       rel="stylesheet"
-      href="./assets/asset/vendors/font-awesome/css/font-awesome.min.css"
+      href="../assets/asset/vendors/font-awesome/css/font-awesome.min.css"
     />
-    <link rel="stylesheet" href="./assets/asset/vendors/typicons/typicons.css" />
+    <link rel="stylesheet" href="../assets/asset/vendors/typicons/typicons.css" />
     <link
       rel="stylesheet"
-      href="./assets/asset/vendors/simple-line-icons/css/simple-line-icons.css"
+      href="../assets/asset/vendors/simple-line-icons/css/simple-line-icons.css"
     />
-    <link rel="stylesheet" href="./assets/asset/vendors/css/vendor.bundle.base.css" />
+    <link rel="stylesheet" href="../assets/asset/vendors/css/vendor.bundle.base.css" />
     <link
       rel="stylesheet"
-      href="./assets/asset/vendors/bootstrap-datepicker/bootstrap-datepicker.min.css"
+      href="../assets/asset/vendors/bootstrap-datepicker/bootstrap-datepicker.min.css"
     />
     <!-- endinject -->
     <!-- Plugin css for this page -->
     <link
       rel="stylesheet"
-      href="./assets/asset/vendors/datatables.net-bs4/dataTables.bootstrap4.css"
+      href="../assets/asset/vendors/datatables.net-bs4/dataTables.bootstrap4.css"
     />
     <link
       rel="stylesheet"
@@ -45,9 +46,9 @@
     />
     <!-- End plugin css for this page -->
     <!-- inject:css -->
-    <link rel="stylesheet" href="./assets/asset/css/recruiter-dashboard.css" />
+    <link rel="stylesheet" href="../assets/asset/css/recruiter-dashboard.css" />
     <!-- endinject -->
-    <link rel="shortcut icon" href="./assets/asset/images/logo-zilo.jpg" />
+    <link rel="shortcut icon" href="../assets/asset/images/logo-zilo.jpg" />
     <style>
       .progress-bar {
         background-color: #007bff; /* Blue color for progression */
@@ -377,16 +378,16 @@
         <nav class="sidebar sidebar-offcanvas" id="sidebar">
           <ul class="nav">
             <li class="nav-item">
-              <a class="nav-link" href="recruiter-dashboard.html">
+              <a class="nav-link" href="../recruiter-dashboard.html">
                 <i class="mdi mdi-grid-large menu-icon"></i>
                 <span class="menu-title">Dashboard</span>
               </a>
             </li>
             <a href="#"><li class="nav-item nav-category"> <i class=" mdi mdi-clock-outline"></i>View Applications</li></a>
-            <a href="./recruiter/jobs.html"><li class="nav-item nav-category">  <i class=" mdi mdi-calendar-check-outline"></i>My Jobs</li></a>
-            <a href="inbox/inbox.html"><li class="nav-item nav-category">  <i class=" mdi mdi-calendar"></i>Messages</li></a>
+            <a href="#"><li class="nav-item nav-category">  <i class=" mdi mdi-calendar-check-outline"></i>My Jobs</li></a>
+            <a href="../inbox/inbox.html"><li class="nav-item nav-category">  <i class=" mdi mdi-calendar"></i>Messages</li></a>
             <a href="#"><li class="nav-item nav-category"> <i class=" mdi mdi-trophy"></i>Recommendations</li></a>
-            <a href="profiles/company_profile.html"><li class="nav-item nav-category" >  <i class=" mdi mdi-cog"></i>settings</li></a>
+            <a href="../profiles/company_profile.html"><li class="nav-item nav-category" >  <i class=" mdi mdi-cog"></i>settings</li></a>
             <a href="#"><li class="nav-item nav-category">  <i class=" mdi mdi-logout" ></i> log-out</li></a>
           </ul>
         </nav>
@@ -499,7 +500,7 @@
                                   >
                                     <div>
                                       <h4 class="card-title card-title-dash">
-                                        Pending Applications
+                                        My Jobs
                                       </h4>
                                       <p
                                         class="card-subtitle card-subtitle-dash"
@@ -536,10 +537,10 @@
                                               ></label>
                                             </div>
                                           </th>
-                                          <th>Candidates</th>
-                                          <th>Situation</th>
-                                          <th>success rate</th>
-                                          <th>Working status</th>
+                                          <th>Job title</th>
+                                          <th>date posted</th>
+                                          <th>Applicants match</th>
+                                          <th>Status</th>
                                         </tr>
                                       </thead>
                                       <tbody>
@@ -559,20 +560,20 @@
                                             </div>
                                           </td>
                                           <td>
-                                            <a href="profiles/user_profile.html"><div class="d-flex">
+                                            <div class="d-flex">
                                               <img
-                                                src="./assets/asset/images/faces/face1.jpg"
+                                                src="../assets/asset/images/faces/face1.jpg"
                                                 alt=""
                                               />
-                                              <div></a>
-                                                <h6>Eddy Steve</h6>
-                                                <p>Danser</p>
+                                              <div>
+                                                <h6>Cleaner</h6>
+                                                <p></p>
                                               </div>
                                             </div>
                                           </td>
                                           <td>
-                                            <h6>student</h6>
-                                            <p>cuurently year 2</p>
+                                            <h6>18:33</h6>
+                                            <p>Sat 18 May 2024</p>
                                           </td>
                                           <td>
                                             <div>
@@ -598,7 +599,7 @@
                                             <div
                                               class="badge badge-opacity-warning"
                                             >
-                                              In progress
+                                             Available
                                             </div>
                                           </td>
                                         </tr>
@@ -620,33 +621,33 @@
                                           <td>
                                             <div class="d-flex">
                                               <img
-                                                src="./assets/asset/images/faces/face2.jpg"
+                                                src="../assets/asset/images/faces/face1.jpg"
                                                 alt=""
                                               />
                                               <div>
-                                                <h6>Nyuydine Bill</h6>
-                                                <p>Singer</p>
+                                                <h6>Cleaner</h6>
+                                                <p></p>
                                               </div>
                                             </div>
                                           </td>
                                           <td>
-                                            <h6>Artist</h6>
-                                            <p>mackdo</p>
+                                            <h6>18:33</h6>
+                                            <p>Sat 18 May 2024</p>
                                           </td>
                                           <td>
                                             <div>
                                               <div
                                                 class="d-flex justify-content-between align-items-center mb-1 max-width-progress-wrap"
                                               >
-                                                <p class="text-success">65%</p>
+                                                <p class="text-success">79%</p>
                                                 <p>85/162</p>
                                               </div>
                                               <div class="progress progress-md">
                                                 <div
                                                   class="progress-bar bg-success"
                                                   role="progressbar"
-                                                  style="width: 65%"
-                                                  aria-valuenow="65"
+                                                  style="width: 85%"
+                                                  aria-valuenow="25"
                                                   aria-valuemin="0"
                                                   aria-valuemax="100"
                                                 ></div>
@@ -657,7 +658,7 @@
                                             <div
                                               class="badge badge-opacity-warning"
                                             >
-                                              In progress
+                                             Available
                                             </div>
                                           </td>
                                         </tr>
@@ -679,328 +680,33 @@
                                           <td>
                                             <div class="d-flex">
                                               <img
-                                                src="./assets/asset/images/faces/face3.jpg"
+                                                src="../assets/asset/images/faces/face1.jpg"
                                                 alt=""
                                               />
                                               <div>
-                                                <h6>Maite Lorelle</h6>
-                                                <p>Good at restaurant</p>
+                                                <h6>Cleaner</h6>
+                                                <p></p>
                                               </div>
                                             </div>
                                           </td>
                                           <td>
-                                            <h6>Student</h6>
-                                            <p>Year 3</p>
+                                            <h6>18:33</h6>
+                                            <p>Sat 18 May 2024</p>
                                           </td>
                                           <td>
                                             <div>
                                               <div
                                                 class="d-flex justify-content-between align-items-center mb-1 max-width-progress-wrap"
                                               >
-                                                <p class="text-success">65%</p>
-                                                <p>85/162</p>
-                                              </div>
-                                              <div class="progress progress-md">
-                                                <div
-                                                  class="progress-bar bg-warning"
-                                                  role="progressbar"
-                                                  style="width: 38%"
-                                                  aria-valuenow="38"
-                                                  aria-valuemin="0"
-                                                  aria-valuemax="100"
-                                                ></div>
-                                              </div>
-                                            </div>
-                                          </td>
-                                          <td>
-                                            <div
-                                              class="badge badge-opacity-warning"
-                                            >
-                                              In progress
-                                            </div>
-                                          </td>
-                                        </tr>
-                                        <tr>
-                                          <td>
-                                            <div
-                                              class="form-check form-check-flat mt-0"
-                                            >
-                                              <label class="form-check-label">
-                                                <input
-                                                  type="checkbox"
-                                                  class="form-check-input"
-                                                  aria-checked="false" /><i
-                                                  class="input-helper"
-                                                ></i
-                                              ></label>
-                                            </div>
-                                          </td>
-                                          <td>
-                                            <div class="d-flex">
-                                              <img
-                                                src="./assets/asset/images/faces/face3.jpg"
-                                                alt=""
-                                              />
-                                              <div>
-                                                <h6>Frank dusell</h6>
-                                                <p>Cleaner</p>
-                                              </div>
-                                            </div>
-                                          </td>
-                                          <td>
-                                            <h6>Umemployer</h6>
-                                            <p>single and searching</p>
-                                          </td>
-                                          <td>
-                                            <div>
-                                              <div
-                                                class="d-flex justify-content-between align-items-center mb-1 max-width-progress-wrap"
-                                              >
-                                                <p class="text-success">65%</p>
-                                                <p>85/162</p>
-                                              </div>
-                                              <div class="progress progress-md">
-                                                <div
-                                                  class="progress-bar bg-warning"
-                                                  role="progressbar"
-                                                  style="width: 38%"
-                                                  aria-valuenow="38"
-                                                  aria-valuemin="0"
-                                                  aria-valuemax="100"
-                                                ></div>
-                                              </div>
-                                            </div>
-                                          </td>
-                                          <td>
-                                            <div
-                                              class="badge badge-opacity-warning"
-                                            >
-                                              In progress
-                                            </div>
-                                          </td>
-                                        </tr>
-                                        <tr>
-                                          <td>
-                                            <div
-                                              class="form-check form-check-flat mt-0"
-                                            >
-                                              <label class="form-check-label">
-                                                <input
-                                                  type="checkbox"
-                                                  class="form-check-input"
-                                                  aria-checked="false" /><i
-                                                  class="input-helper"
-                                                ></i
-                                              ></label>
-                                            </div>
-                                          </td>
-                                          <td>
-                                            <div class="d-flex">
-                                              <img
-                                                src="./assets/asset/images/faces/face3.jpg"
-                                                alt=""
-                                              />
-                                              <div>
-                                                <h6>Wayne Murphy</h6>
-                                                <p>Head admin</p>
-                                              </div>
-                                            </div>
-                                          </td>
-                                          <td>
-                                            <h6>Company name 1</h6>
-                                            <p>company type</p>
-                                          </td>
-                                          <td>
-                                            <div>
-                                              <div
-                                                class="d-flex justify-content-between align-items-center mb-1 max-width-progress-wrap"
-                                              >
-                                                <p class="text-success">65%</p>
-                                                <p>85/162</p>
-                                              </div>
-                                              <div class="progress progress-md">
-                                                <div
-                                                  class="progress-bar bg-warning"
-                                                  role="progressbar"
-                                                  style="width: 38%"
-                                                  aria-valuenow="38"
-                                                  aria-valuemin="0"
-                                                  aria-valuemax="100"
-                                                ></div>
-                                              </div>
-                                            </div>
-                                          </td>
-                                          <td>
-                                            <div
-                                              class="badge badge-opacity-warning"
-                                            >
-                                              In progress
-                                            </div>
-                                          </td>
-                                        </tr>
-                                        <tr>
-                                          <td>
-                                            <div
-                                              class="form-check form-check-flat mt-0"
-                                            >
-                                              <label class="form-check-label">
-                                                <input
-                                                  type="checkbox"
-                                                  class="form-check-input"
-                                                  aria-checked="false" /><i
-                                                  class="input-helper"
-                                                ></i
-                                              ></label>
-                                            </div>
-                                          </td>
-                                          <td>
-                                            <div class="d-flex">
-                                              <img
-                                                src="./assets/asset/images/faces/face3.jpg"
-                                                alt=""
-                                              />
-                                              <div>
-                                                <h6>Wayne Murphy</h6>
-                                                <p>Head admin</p>
-                                              </div>
-                                            </div>
-                                          </td>
-                                          <td>
-                                            <h6>Company name 1</h6>
-                                            <p>company type</p>
-                                          </td>
-                                          <td>
-                                            <div>
-                                              <div
-                                                class="d-flex justify-content-between align-items-center mb-1 max-width-progress-wrap"
-                                              >
-                                                <p class="text-success">65%</p>
-                                                <p>85/162</p>
-                                              </div>
-                                              <div class="progress progress-md">
-                                                <div
-                                                  class="progress-bar bg-warning"
-                                                  role="progressbar"
-                                                  style="width: 38%"
-                                                  aria-valuenow="38"
-                                                  aria-valuemin="0"
-                                                  aria-valuemax="100"
-                                                ></div>
-                                              </div>
-                                            </div>
-                                          </td>
-                                          <td>
-                                            <div
-                                              class="badge badge-opacity-warning"
-                                            >
-                                              In progress
-                                            </div>
-                                          </td>
-                                        </tr>
-                                        <tr>
-                                          <td>
-                                            <div
-                                              class="form-check form-check-flat mt-0"
-                                            >
-                                              <label class="form-check-label">
-                                                <input
-                                                  type="checkbox"
-                                                  class="form-check-input"
-                                                  aria-checked="false" /><i
-                                                  class="input-helper"
-                                                ></i
-                                              ></label>
-                                            </div>
-                                          </td>
-                                          <td>
-                                            <div class="d-flex">
-                                              <img
-                                                src="./assets/asset/images/faces/face4.jpg"
-                                                alt=""
-                                              />
-                                              <div>
-                                                <h6>Matthew Bailey</h6>
-                                                <p>Head admin</p>
-                                              </div>
-                                            </div>
-                                          </td>
-                                          <td>
-                                            <h6>Company name 1</h6>
-                                            <p>company type</p>
-                                          </td>
-                                          <td>
-                                            <div>
-                                              <div
-                                                class="d-flex justify-content-between align-items-center mb-1 max-width-progress-wrap"
-                                              >
-                                                <p class="text-success">65%</p>
-                                                <p>85/162</p>
-                                              </div>
-                                              <div class="progress progress-md">
-                                                <div
-                                                  class="progress-bar bg-danger"
-                                                  role="progressbar"
-                                                  style="width: 15%"
-                                                  aria-valuenow="15"
-                                                  aria-valuemin="0"
-                                                  aria-valuemax="100"
-                                                ></div>
-                                              </div>
-                                            </div>
-                                          </td>
-                                          <td>
-                                            <div
-                                              class="badge badge-opacity-danger"
-                                            >
-                                              Pending
-                                            </div>
-                                          </td>
-                                        </tr>
-                                        <tr>
-                                          <td>
-                                            <div
-                                              class="form-check form-check-flat mt-0"
-                                            >
-                                              <label class="form-check-label">
-                                                <input
-                                                  type="checkbox"
-                                                  class="form-check-input"
-                                                  aria-checked="false" /><i
-                                                  class="input-helper"
-                                                ></i
-                                              ></label>
-                                            </div>
-                                          </td>
-                                          <td>
-                                            <div class="d-flex">
-                                              <img
-                                                src="./assets/asset/images/faces/face5.jpg"
-                                                alt=""
-                                              />
-                                              <div>
-                                                <h6>Katherine Butler</h6>
-                                                <p>Head admin</p>
-                                              </div>
-                                            </div>
-                                          </td>
-                                          <td>
-                                            <h6>Company name 1</h6>
-                                            <p>company type</p>
-                                          </td>
-                                          <td>
-                                            <div>
-                                              <div
-                                                class="d-flex justify-content-between align-items-center mb-1 max-width-progress-wrap"
-                                              >
-                                                <p class="text-success">65%</p>
+                                                <p class="text-success">79%</p>
                                                 <p>85/162</p>
                                               </div>
                                               <div class="progress progress-md">
                                                 <div
                                                   class="progress-bar bg-success"
                                                   role="progressbar"
-                                                  style="width: 65%"
-                                                  aria-valuenow="65"
+                                                  style="width: 85%"
+                                                  aria-valuenow="25"
                                                   aria-valuemin="0"
                                                   aria-valuemax="100"
                                                 ></div>
@@ -1009,9 +715,304 @@
                                           </td>
                                           <td>
                                             <div
-                                              class="badge badge-opacity-success"
+                                              class="badge badge-opacity-warning"
                                             >
-                                              Completed
+                                             Available
+                                            </div>
+                                          </td>
+                                        </tr>
+                                        <tr>
+                                          <td>
+                                            <div
+                                              class="form-check form-check-flat mt-0"
+                                            >
+                                              <label class="form-check-label">
+                                                <input
+                                                  type="checkbox"
+                                                  class="form-check-input"
+                                                  aria-checked="false" /><i
+                                                  class="input-helper"
+                                                ></i
+                                              ></label>
+                                            </div>
+                                          </td>
+                                          <td>
+                                            <div class="d-flex">
+                                              <img
+                                                src="../assets/asset/images/faces/face1.jpg"
+                                                alt=""
+                                              />
+                                              <div>
+                                                <h6>Cleaner</h6>
+                                                <p></p>
+                                              </div>
+                                            </div>
+                                          </td>
+                                          <td>
+                                            <h6>18:33</h6>
+                                            <p>Sat 18 May 2024</p>
+                                          </td>
+                                          <td>
+                                            <div>
+                                              <div
+                                                class="d-flex justify-content-between align-items-center mb-1 max-width-progress-wrap"
+                                              >
+                                                <p class="text-success">79%</p>
+                                                <p>85/162</p>
+                                              </div>
+                                              <div class="progress progress-md">
+                                                <div
+                                                  class="progress-bar bg-success"
+                                                  role="progressbar"
+                                                  style="width: 85%"
+                                                  aria-valuenow="25"
+                                                  aria-valuemin="0"
+                                                  aria-valuemax="100"
+                                                ></div>
+                                              </div>
+                                            </div>
+                                          </td>
+                                          <td>
+                                            <div
+                                              class="badge badge-opacity-warning"
+                                            >
+                                             Available
+                                            </div>
+                                          </td>
+                                        </tr>
+                                        <tr>
+                                          <td>
+                                            <div
+                                              class="form-check form-check-flat mt-0"
+                                            >
+                                              <label class="form-check-label">
+                                                <input
+                                                  type="checkbox"
+                                                  class="form-check-input"
+                                                  aria-checked="false" /><i
+                                                  class="input-helper"
+                                                ></i
+                                              ></label>
+                                            </div>
+                                          </td>
+                                          <td>
+                                            <div class="d-flex">
+                                              <img
+                                                src="../assets/asset/images/faces/face1.jpg"
+                                                alt=""
+                                              />
+                                              <div>
+                                                <h6>Cleaner</h6>
+                                                <p></p>
+                                              </div>
+                                            </div>
+                                          </td>
+                                          <td>
+                                            <h6>18:33</h6>
+                                            <p>Sat 18 May 2024</p>
+                                          </td>
+                                          <td>
+                                            <div>
+                                              <div
+                                                class="d-flex justify-content-between align-items-center mb-1 max-width-progress-wrap"
+                                              >
+                                                <p class="text-success">79%</p>
+                                                <p>85/162</p>
+                                              </div>
+                                              <div class="progress progress-md">
+                                                <div
+                                                  class="progress-bar bg-success"
+                                                  role="progressbar"
+                                                  style="width: 85%"
+                                                  aria-valuenow="25"
+                                                  aria-valuemin="0"
+                                                  aria-valuemax="100"
+                                                ></div>
+                                              </div>
+                                            </div>
+                                          </td>
+                                          <td>
+                                            <div
+                                              class="badge badge-opacity-warning"
+                                            >
+                                             Available
+                                            </div>
+                                          </td>
+                                        </tr>
+                                        <tr>
+                                          <td>
+                                            <div
+                                              class="form-check form-check-flat mt-0"
+                                            >
+                                              <label class="form-check-label">
+                                                <input
+                                                  type="checkbox"
+                                                  class="form-check-input"
+                                                  aria-checked="false" /><i
+                                                  class="input-helper"
+                                                ></i
+                                              ></label>
+                                            </div>
+                                          </td>
+                                          <td>
+                                            <div class="d-flex">
+                                              <img
+                                                src="../assets/asset/images/faces/face1.jpg"
+                                                alt=""
+                                              />
+                                              <div>
+                                                <h6>Cleaner</h6>
+                                                <p></p>
+                                              </div>
+                                            </div>
+                                          </td>
+                                          <td>
+                                            <h6>18:33</h6>
+                                            <p>Sat 18 May 2024</p>
+                                          </td>
+                                          <td>
+                                            <div>
+                                              <div
+                                                class="d-flex justify-content-between align-items-center mb-1 max-width-progress-wrap"
+                                              >
+                                                <p class="text-success">79%</p>
+                                                <p>85/162</p>
+                                              </div>
+                                              <div class="progress progress-md">
+                                                <div
+                                                  class="progress-bar bg-success"
+                                                  role="progressbar"
+                                                  style="width: 85%"
+                                                  aria-valuenow="25"
+                                                  aria-valuemin="0"
+                                                  aria-valuemax="100"
+                                                ></div>
+                                              </div>
+                                            </div>
+                                          </td>
+                                          <td>
+                                            <div
+                                              class="badge badge-opacity-warning"
+                                            >
+                                             Available
+                                            </div>
+                                          </td>
+                                        </tr>
+                                        <tr>
+                                          <td>
+                                            <div
+                                              class="form-check form-check-flat mt-0"
+                                            >
+                                              <label class="form-check-label">
+                                                <input
+                                                  type="checkbox"
+                                                  class="form-check-input"
+                                                  aria-checked="false" /><i
+                                                  class="input-helper"
+                                                ></i
+                                              ></label>
+                                            </div>
+                                          </td>
+                                          <td>
+                                            <div class="d-flex">
+                                              <img
+                                                src="../assets/asset/images/faces/face1.jpg"
+                                                alt=""
+                                              />
+                                              <div>
+                                                <h6>Cleaner</h6>
+                                                <p></p>
+                                              </div>
+                                            </div>
+                                          </td>
+                                          <td>
+                                            <h6>18:33</h6>
+                                            <p>Sat 18 May 2024</p>
+                                          </td>
+                                          <td>
+                                            <div>
+                                              <div
+                                                class="d-flex justify-content-between align-items-center mb-1 max-width-progress-wrap"
+                                              >
+                                                <p class="text-success">79%</p>
+                                                <p>85/162</p>
+                                              </div>
+                                              <div class="progress progress-md">
+                                                <div
+                                                  class="progress-bar bg-success"
+                                                  role="progressbar"
+                                                  style="width: 85%"
+                                                  aria-valuenow="25"
+                                                  aria-valuemin="0"
+                                                  aria-valuemax="100"
+                                                ></div>
+                                              </div>
+                                            </div>
+                                          </td>
+                                          <td>
+                                            <div
+                                              class="badge badge-opacity-warning"
+                                            >
+                                             Available
+                                            </div>
+                                          </td>
+                                        </tr>
+                                        <tr>
+                                          <td>
+                                            <div
+                                              class="form-check form-check-flat mt-0"
+                                            >
+                                              <label class="form-check-label">
+                                                <input
+                                                  type="checkbox"
+                                                  class="form-check-input"
+                                                  aria-checked="false" /><i
+                                                  class="input-helper"
+                                                ></i
+                                              ></label>
+                                            </div>
+                                          </td>
+                                          <td>
+                                            <div class="d-flex">
+                                              <img
+                                                src="../assets/asset/images/faces/face1.jpg"
+                                                alt=""
+                                              />
+                                              <div>
+                                                <h6>Cleaner</h6>
+                                                <p></p>
+                                              </div>
+                                            </div>
+                                          </td>
+                                          <td>
+                                            <h6>18:33</h6>
+                                            <p>Sat 18 May 2024</p>
+                                          </td>
+                                          <td>
+                                            <div>
+                                              <div
+                                                class="d-flex justify-content-between align-items-center mb-1 max-width-progress-wrap"
+                                              >
+                                                <p class="text-success">79%</p>
+                                                <p>85/162</p>
+                                              </div>
+                                              <div class="progress progress-md">
+                                                <div
+                                                  class="progress-bar bg-success"
+                                                  role="progressbar"
+                                                  style="width: 85%"
+                                                  aria-valuenow="25"
+                                                  aria-valuemin="0"
+                                                  aria-valuemax="100"
+                                                ></div>
+                                              </div>
+                                            </div>
+                                          </td>
+                                          <td>
+                                            <div
+                                              class="badge badge-opacity-warning"
+                                            >
+                                             Available
                                             </div>
                                           </td>
                                         </tr>
