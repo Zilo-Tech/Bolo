@@ -1,128 +1,130 @@
 /* FONT */
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Roboto+Slab:300,400,700");
 
-/* BASE STYLES */
-body {
-    font-family: 'Roboto', sans-serif;
-    background-color: #f4f4f9;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
+/* BASE */
+html {
+    font-size: 13px;
+    font-family: "Roboto Slab", serif;
+    font-weight: 400;
+    line-height: 13px;
+    -webkit-font-smoothing: auto;
+    text-rendering: optimizeLegibility;
+    color: #fff;
+    overflow: hidden;
 }
 
-.progressContainer {
-    background-color: #ffffff;
-    border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    padding: 2rem;
-    width: 100%;
-    max-width: 600px;
-    /* Increased width */
-    height: 80vh;
-    /* Increased height */
-    box-sizing: border-box;
-    overflow-y: auto;
-    /* Added scroll for overflow content */
+
+p {
+    font-size: 13px;
+    margin: 0 0 11px;
 }
 
-header {
-    text-align: center;
-    margin-bottom: 2rem;
-}
-
-header h1 {
-    font-size: 1.5rem;
-    color: #333;
-    margin: 0;
-}
-
-header p {
-    color: #777;
-    margin-top: 0.5rem;
-}
-
-header .icon {
-    color: #ff4757;
-}
-
-header a {
-    color: #1e90ff;
+a {
+    color: #fff;
     text-decoration: none;
 }
 
-.progress {
-    list-style: none;
-    padding: 0;
-    margin: 0;
+.uniqueHeader {
+    text-align: center;
+    margin-bottom: 4rem;
 }
 
-.progress__item {
+.uniqueHeader h1 {
+    font-size: 1.8rem;
+    line-height: 2.1rem;
+}
+
+.uniqueHeader p {
+    margin-top: 1rem;
+}
+
+.uniqueIcon {
+    color: #f3597d;
+}
+
+.uniqueProgressContainer {
     position: relative;
-    padding-left: 3rem;
-    /* Increased padding for better spacing */
-    margin-bottom: 2rem;
-    /* Increased margin for better spacing */
+    width: 100%;
+    height: 100vh;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 2rem;
+    color: #fff;
+    background: #2675e1;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
 }
 
-.progress__item::before {
+.uniqueProgress {
+    position: relative;
+    padding: 0 1rem 0 3.5rem;
+    margin: 2rem 0 0;
+    list-style: none;
+}
+
+.uniqueProgressItem {
+    position: relative;
+    min-height: 75px;
+    counter-increment: list;
+    padding-left: 0.5rem;
+}
+
+.uniqueProgressItem:before {
     content: "";
     position: absolute;
-    left: 1rem;
-    /* Adjusted to align with increased padding */
+    left: -1.5rem;
+    top: 33px;
+    height: 60%;
+    width: 1px;
+    border-left: 1px solid #fff;
+}
+
+.uniqueProgressItem:after {
+    content: counter(list);
+    position: absolute;
     top: 0;
-    bottom: 0;
-    width: 6px;
-    /* Increased line width */
-    background-color: #dfe4ea;
-}
-
-.progress__item::after {
-    content: "";
-    position: absolute;
-    left: 0.5rem;
-    /* Adjusted to align with increased padding */
-    top: 0.75rem;
-    width: 2rem;
-    /* Increased circle size */
-    height: 2rem;
-    /* Increased circle size */
+    left: -2.5rem;
+    width: 26px;
+    height: 26px;
     border-radius: 50%;
-    background-color: #dfe4ea;
-    z-index: 1;
+    background: transparent;
+    color: #fff;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 2rem;
+    text-align: center;
+    border: 1px solid #fff;
 }
 
-.progress__item--completed::before,
-.progress__item--active::before {
-    background-color: #1e90ff;
+/* Hide border for Last Step */
+.uniqueProgressItem:last-child:before {
+    border: none;
 }
 
-.progress__item--completed::after {
-    background-color: #1e90ff;
-    content: "✔";
-    color: #ffffff;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 1rem;
+/* Completed */
+.uniqueProgressItem--completed {
+    opacity: 0.6;
+    color: #fff;
 }
 
-.progress__item--active::after {
-    background-color: #1e90ff;
+.uniqueProgressItem--completed:after {
+    content: "\2713";
+    font-weight: 400;
+    background: #fff;
+    color: #392a60;
 }
 
-.progress__title {
-    font-size: 1.25rem;
-    /* Increased font size */
-    margin: 0 0 0.5rem 0;
-    /* Adjusted margin */
-    color: #333;
+/* Active */
+.uniqueProgressItem--active:after {
+    background: #fff;
+    color: #392a60;
 }
 
-.progress__info {
-    font-size: 1rem;
-    /* Increased font size */
-    color: #777;
+.uniqueProgressTitle {
+    padding: 0.4rem 0 0.5rem;
     margin: 0;
+    font-size: 1.5rem;
+}
+
+.uniqueProgressInfo {
+    font-size: 13px;
 }
