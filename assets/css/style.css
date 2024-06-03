@@ -17,3 +17,79 @@ form.search-box .select-form .nice-select {
 form.search-box .input-form input{
    height: 50px !important;
 }
+
+
+/* The Modal (background) */
+.modal {
+   display: none;
+   position: fixed;
+   z-index: 1;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+   overflow: auto;
+   background-color: rgb(0, 0, 0);
+   background-color: rgba(0, 0, 0, 0.4);
+   padding-top: 60px;
+}
+
+/* Modal Content */
+.modal-content {
+   background-color: #fefefe;
+   margin: 5% auto;
+   padding: 20px;
+   border: 1px solid #888;
+   width: 80%;
+   max-width: 600px;
+}
+
+/* Close Button */
+.close {
+   color: #aaa;
+   float: right;
+   font-size: 28px;
+   font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+   color: black;
+   text-decoration: none;
+   cursor: pointer;
+}
+
+/* Form styling */
+.modal-content form {
+   display: flex;
+   flex-direction: column;
+}
+
+.modal-content form label {
+   margin-top: 10px;
+}
+
+.modal-content form input,
+.modal-content form button {
+   margin-top: 5px;
+   padding: 10px;
+   font-size: 16px;
+}
+
+/* Submit Button Styling */
+.modal-content .btn {
+   background-color: #4CAF50;
+   color: white;
+   padding: 12px 20px;
+   margin: 8px 0;
+   border: none;
+   border-radius: 4px;
+   cursor: pointer;
+   font-size: 16px;
+   text-align: center;
+   transition: background-color 0.3s ease;
+}
+
+.modal-content .btn:hover {
+   background-color: #45a049;
+}
