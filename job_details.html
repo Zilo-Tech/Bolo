@@ -1,13 +1,17 @@
 <!DOCTYPE html>
 <html class="no-js" lang="zxx">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="x-ua-compatible" content="ie=edge">
-         <title>BOLO|ZiloTech</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="manifest" href="site.webmanifest">
-		<link rel="shortcut icon" type="image/x-icon" href="assets/img/logo/logo.png">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>BOLO|ZiloTech</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="manifest" href="site.webmanifest" />
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="assets/img/logo/logo.png"
+    />
 
     <!-- CSS here -->
     <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
@@ -217,7 +221,7 @@
                   <li>Application date : <span>20 May 2024</span></li>
                 </ul>
                 <div class="apply-btn2">
-                  <a href="#" class="btn">Apply Now</a>
+                  <a href="#" class="btn" id="applyNowBtn">Apply Now</a>
                 </div>
               </div>
               <div class="post-details4 mb-50">
@@ -347,7 +351,66 @@
       <!-- Footer End-->
     </footer>
 
-    <!-- JS here -->
+   
+    <!-- Modal -->
+    <div id="applyModal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Apply for the Job</h2>
+        <form id="applyForm">
+          <label for="name">Full Name</label>
+          <input type="text" id="name" name="name" required />
+
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required />
+
+          <label for="phone">Phone Number</label>
+          <input type="tel" id="phone" name="phone" required />
+
+          <label for="resume">Upload Resume</label>
+          <input type="file" id="resume" name="resume" required />
+
+          <button type="submit" class="btn">Submit Application</button>
+        </form>
+      </div>
+    </div>
+
+
+    <script>
+      // Get the modal
+      var modal = document.getElementById("applyModal");
+
+      var btn = document.getElementById("applyNowBtn");
+
+      var span = document.getElementsByClassName("close")[0];
+
+      btn.onclick = function () {
+        modal.style.display = "block";
+      };
+
+      span.onclick = function () {
+        modal.style.display = "none";
+      };
+
+      window.onclick = function (event) {
+        if (event.target == modal) {
+          modal.style.display = "none";
+        }
+      };
+
+      document.getElementById("applyForm").onsubmit = function (event) {
+        event.preventDefault();
+        var formData = new FormData(this);
+
+        for (var [key, value] of formData.entries()) {
+          console.log(key, value);
+        }
+
+        modal.style.display = "none";
+
+      };
+    </script>
+     <!-- JS here -->
 
     <!-- All JS Custom Plugins Link Here here -->
     <script src="./assets/js/vendor/modernizr-3.5.0.min.js"></script>
