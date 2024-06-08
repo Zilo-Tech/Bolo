@@ -1,8 +1,8 @@
-var clicked = 0;
+var clicked = false;
 
 function follow() {
     let following;
-    if(clicked%2 === 1) {
+    if(clicked) {
         following = "Follow ";
         document.getElementById("follow").style.backgroundColor = "white";
         document.getElementById('follow').style.color = "#2675e1";
@@ -12,7 +12,7 @@ function follow() {
         document.getElementById("follow").style.backgroundColor = "#2675e1";
         document.getElementById('follow').style.color = "white";
     }
-    clicked = clicked + 1;
+    clicked = !clicked
     document.getElementById("following").innerHTML = following;
 }
 
