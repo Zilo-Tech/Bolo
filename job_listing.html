@@ -140,7 +140,7 @@
                       <option value="">All Category</option>
                       <option value="">Street Vendor</option>
                       <option value="">Motorcycle Taxis (Okada)</option>
-                      <option value="">Domestic Workers</option>
+                      <option value="" id="domestic">Domestic Workers</option>
                       <option value="">Market Trader</option>
                     </select>
                   </div>
@@ -152,12 +152,12 @@
                     </div>
                     <label class="container"
                       >Full Time
-                      <input type="checkbox" />
+                      <input type="checkbox" checked="checked active" />
                       <span class="checkmark"></span>
                     </label>
                     <label class="container"
                       >Part Time
-                      <input type="checkbox" checked="checked active" />
+                      <input type="checkbox"  />
                       <span class="checkmark"></span>
                     </label>
                     <label class="container"
@@ -308,7 +308,7 @@
                   <div class="row">
                     <div class="col-lg-12">
                       <div class="count-job mb-35">
-                        <span>39, 782 Jobs found</span>
+                        <span id="jobs-found">39, 782 Jobs found</span>
                         <!-- Select job items start -->
                         <div class="select-job-items">
                           <span>Sort by</span>
@@ -613,7 +613,7 @@
     </footer>
 
     <!-- JS here -->
-
+    <script src="./assets/js/job_listing.js"></script>
     <!-- All JS Custom Plugins Link Here here -->
     <script src="./assets/js/vendor/modernizr-3.5.0.min.js"></script>
     <!-- Jquery, Popper, Bootstrap -->
@@ -648,5 +648,6 @@
     <!-- Jquery Plugins, main Jquery -->
     <script src="./assets/js/plugins.js"></script>
     <script src="./assets/js/main.js"></script>
+    
   </body>
 </html>

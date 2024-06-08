@@ -194,6 +194,7 @@
               <div class="apply-btn2">
                 <a href="#" class="btn" id="applyNowBtn">Apply Now</a>
               </div>
+              <div id="applied" style="display: none;color: green;">Thank you for Applying</div>
             </div>
             <div class="post-details4 mb-50">
               <!-- Small Section Tittle -->
@@ -320,9 +321,9 @@
         <input type="tel" id="phone" name="phone" required />
 
         <label for="resume">Upload Resume</label>
-        <input type="file" id="resume" name="resume" required />
+        <input type="file" id="resume" name="resume" />
 
-        <button type="submit" class="btn">Submit Application</button>
+        <button type="submit" class="btn" onclick="submited()" >Submit Application</button>
       </form>
     </div>
   </div>
@@ -363,7 +364,7 @@
     };
   </script>
   <!-- JS here -->
-
+  <script src="./assets/js/job_listing.js"></script>
   <!-- All JS Custom Plugins Link Here here -->
   <script src="./assets/js/vendor/modernizr-3.5.0.min.js"></script>
   <!-- Jquery, Popper, Bootstrap -->
